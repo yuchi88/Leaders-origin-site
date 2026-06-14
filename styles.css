@@ -120,10 +120,14 @@ button {
   overflow: hidden;
   transition: max-height 0.3s ease;
   background: var(--green);
+  visibility: hidden; /* hide from AT when closed */
+  pointer-events: none; /* prevent mouse/touch interaction when closed */
 }
 
 .nav-menu.is-open {
   max-height: 320px;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .nav-menu a {
@@ -485,6 +489,8 @@ button {
     justify-content: center;
     gap: 12px;
     padding: 0 24px 14px;
+    visibility: visible; /* ensure visible on larger screens */
+    pointer-events: auto;
   }
 
   .nav-menu a {
