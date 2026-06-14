@@ -133,17 +133,19 @@ button {
   font-size: 0.95rem;
 }
 
+/* ===== ファーストビュー（見切れロゴ＆ダイナミック版） ===== */
 .hero {
   position: relative;
   background: linear-gradient(160deg, var(--lime) 0%, var(--green) 100%);
   color: var(--text-on-green);
-  min-height: 75vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
-  padding: 40px 20px 80px;
+  padding: 40px 20px 100px;
   overflow: hidden;
 }
 
+/* 左右非対称のレイアウトを作るためのコンテナ */
 .hero-inner-dynamic {
   display: flex;
   flex-direction: column;
@@ -154,10 +156,13 @@ button {
   z-index: 2;
 }
 
+/* --- 左側：見切れる巨大シンボルマークのエリア --- */
 .hero-left-box {
   align-self: flex-start;
-  width: 65%;
-  margin-bottom: -20px;
+  width: 90%;
+  margin-top: -30px;
+  margin-left: -25%;
+  margin-bottom: -60px;
 }
 
 .hero-symbol-big {
@@ -166,32 +171,36 @@ button {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: var(--bg);
-  padding: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.18);
   opacity: 0;
-  animation: zoomFadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+  animation: zoomFadeInBig 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
 
+/* --- 右下：大きなタイトル文字のエリア --- */
 .hero-right-box {
   align-self: flex-end;
   text-align: right;
-  width: 80%;
+  width: 85%;
   margin-top: 10px;
+  position: relative;
+  z-index: 3;
 }
 
+/* 右下に大きく浮かび上がるタイトル文字 */
 .hero-title-big {
   font-size: 2.8rem;
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: var(--text-on-green);
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   opacity: 0;
   animation: sldieInRight 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
 }
 
 .hero-sub-text {
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--bg);
@@ -202,8 +211,8 @@ button {
 
 .hero-btn-styled {
   display: inline-block;
-  margin-top: 24px;
-  padding: 12px 36px;
+  margin-top: 28px;
+  padding: 14px 40px;
   background-color: var(--bg);
   color: var(--green);
   font-weight: 700;
@@ -222,18 +231,31 @@ button {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== 新しいアニメーションの定義（キーフレーム） ===== */
-@keyframes zoomFadeIn {
+/* 下部の波ウェーブ */
+.hero-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 48px;
+  background-color: var(--bg);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: 4;
+}
+
+/* ===== 新しい巨大ロゴ用アニメーション ===== */
+@keyframes zoomFadeInBig {
   0% {
     opacity: 0;
-    transform: scale(0.85);
+    transform: scale(0.8) rotate(-5deg);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
   }
 }
 
+/* 右下の文字・ボタン用（変更なし） */
 @keyframes sldieInRight {
   0% {
     opacity: 0;
@@ -481,10 +503,13 @@ button {
     align-items: center;
     justify-content: space-between;
     max-width: 800px;
+    min-height: 0;
   }
 
   .hero-left-box {
     width: 40%;
+    margin-top: 0;
+    margin-left: 0;
     margin-bottom: 0;
   }
 
