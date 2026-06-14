@@ -1,11 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>おんが町民会議 | イベント紹介</title>
+    <meta
+      name="description"
+      content="おんが町民会議のイベント紹介サイト。こどもまつり、ナイトリバー、オアシス運動、青年の主張大会、鮭の放流会、たこあげ大会など、地域を盛り上げるイベント情報をお届けします。"
+    />
+    <meta name="theme-color" content="#378D33" />
+    <link rel="icon" href="img/onga-youth-sinbol.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="header-brand" href="#top">
+          <img
+            src="img/onga-youth-sinbol.png"
+            alt="おんが町民会議のシンボルマーク"
+            class="header-logo"
+          />
+          <span class="header-title">おんが町民会議</span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="nav-menu" id="navMenu" aria-label="メインメニュー">
+        <a href="#news">お知らせ</a>
+        <a href="#about">町民会議とは？</a>
+        <a href="#events">イベント</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </header>
 
-</body>
+    <main>
+      <!-- 1. ファーストビュー -->
+      <section class="hero" aria-label="メインビジュアル">
+        <div class="hero-inner-dynamic">
+          <div class="hero-left-box">
+            <img
+              src="img/onga-youth-sinbol.png"
+              alt="おんが町民会議のシンボルマーク"
+              class="hero-symbol-big"
+            />
+          </div>
+
+          <div class="hero-right-box">
+            <h1 class="hero-title-big">おんが<br />町民会議</h1>
+            <p class="hero-sub-text">まちを、もっとおもしろく。</p>
+            <a href="#events" class="hero-btn-styled">イベントを見る</a>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true"></div>
+      </section>
+
+      <!-- 2. お知らせ -->
+      <section class="section news" id="news" aria-labelledby="news-heading">
+        <h2 class="section-title" id="news-heading">お知らせ</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <a href="#events">
+              <span class="news-date">2026.03.15</span>
+              <span class="news-text"
+                >「鮭の放流会」の参加者を募集しています</span
+              >
+              <span class="news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#events">
+              <span class="news-date">2026.02.28</span>
+              <span class="news-text"
+                >今年度のイベントスケジュールを公開しました</span
+              >
+              <span class="news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#about">
+              <span class="news-date">2026.02.10</span>
+              <span class="news-text">新メンバー（青年部）を募集中です</span>
+              <span class="news-arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 3. 町民会議とは？ -->
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <div class="about-inner">
+          <h2 class="section-title section-title--light" id="about-heading">
+            町民会議とは？
+          </h2>
+          <p class="about-text">
+            おんが町民会議は、地域の住民が中心となって、まちをより楽しく、より住みやすくするための活動を行う団体です。
+            子どもから大人まで、世代をこえて人と人がつながる「きっかけ」をつくることを大切にしています。
+          </p>
+          <p class="about-text">
+            季節ごとのイベントや環境美化活動、青少年の育成など、わたしたちの活動はさまざま。
+            「自分たちのまちは自分たちで盛り上げる」——そんな想いを胸に、みんなで地域の未来をつくっています。
+          </p>
+        </div>
+      </section>
+
+      <!-- 4. イベント -->
+      <section
+        class="section events"
+        id="events"
+        aria-labelledby="events-heading"
+      >
+        <h2 class="section-title" id="events-heading">イベント</h2>
+        <div class="event-grid">
+          <article class="event-card">
+            <div class="event-thumb">
+              <img src="images/event-kodomo.png" alt="こどもまつりの様子" />
+            </div>
+            <div class="event-body">
+              <span class="event-month">5月</span>
+              <h3 class="event-name">こどもまつり</h3>
+              <p class="event-desc">
+                遊びや屋台がいっぱい！子どもたちが主役の春の一大イベントです。
+              </p>
+              <a href="#contact" class="event-btn">詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-thumb">
+              <img src="images/event-nightriver.png" alt="ナイトリバーの様子" />
+            </div>
+            <div class="event-body">
+              <span class="event-month">7月</span>
+              <h3 class="event-name">ナイトリバー</h3>
+              <p class="event-desc">
+                川辺を灯りで彩る、夏の夜のロマンチックなイベントです。
+              </p>
+              <a href="#contact" class="event-btn">詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-thumb">
+              <img src="images/event-oasis.png" alt="オアシス運動の様子" />
+            </div>
+            <div class="event-body">
+              <span class="event-month">9月</span>
+              <h3 class="event-name">オアシス運動</h3>
+              <p class="event-desc">
+                みんなでまちをきれいに。地域の環境美化に取り組みます。
+              </p>
+              <a href="#contact" class="event-btn">詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-thumb">
+              <img src="images/event-speech.png" alt="青年の主張大会の様子" />
+            </div>
+            <div class="event-body">
+              <span class="event-month">10月</span>
+              <h3 class="event-name">青年の主張大会</h3>
+              <p class="event-desc">
+                若者が想いを発信する場。未来への熱いメッセージが集まります。
+              </p>
+              <a href="#contact" class="event-btn">詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-thumb">
+              <img src="images/event-salmon.png" alt="鮭の放流会の様子" />
+            </div>
+            <div class="event-body">
+              <span class="event-month">12月</span>
+              <h3 class="event-name">鮭の放流会</h3>
+              <p class="event-desc">
+                稚魚を川へ。命と自然の大切さを学べる人気のイベントです。
+              </p>
+              <a href="#contact" class="event-btn">詳細を見る</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <div class="event-thumb">
+              <img src="images/event-kite.png" alt="たこあげ大会の様子" />
+            </div>
+            <div class="event-body">
+              <span class="event-month">1月</span>
+              <h3 class="event-name">たこあげ大会</h3>
+              <p class="event-desc">
+                冬の青空にたこを揚げよう！家族で楽しめる新春イベントです。
+              </p>
+              <a href="#contact" class="event-btn">詳細を見る</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5. お問い合わせ -->
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-heading"
+      >
+        <div class="contact-inner">
+          <h2 class="section-title section-title--light" id="contact-heading">
+            お問い合わせ
+          </h2>
+          <p class="contact-lead">
+            イベントへの参加や活動に関するご質問は、お気軽にご連絡ください。
+          </p>
+          <address class="contact-address">
+            〒811-4300<br />
+            福岡県遠賀郡遠賀町　遠賀町役場内<br />
+            おんが町民会議 事務局<br />
+            TEL：093-000-0000
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <!-- 6. フッター -->
+    <footer class="site-footer">
+      <p>&copy;2026.onga-youth-council</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
