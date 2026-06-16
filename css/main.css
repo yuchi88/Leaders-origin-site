@@ -139,11 +139,9 @@
 .hero-symbol-big {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  background-color: var(--bg);
-  padding: 16px;
-  box-shadow: 0 14px 40px rgba(43, 64, 33, 0.22);
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
   opacity: 0;
   animation: zoomFadeInBig 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
