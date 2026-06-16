@@ -101,7 +101,6 @@
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-
   color: var(--text-on-green);
   min-height: 100vh;
   display: flex;
@@ -152,9 +151,7 @@
 .hero-right-box {
   width: 100%;
   text-align: right;
-
   padding-bottom: 0;
-
   position: relative;
   z-index: 3;
 }
