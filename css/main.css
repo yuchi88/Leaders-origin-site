@@ -102,7 +102,7 @@
   min-height: 82vh;
   display: flex;
   align-items: center;
-  padding: 40px 20px 140px; /* 下部SVGが入るため、余白を広めに */
+  padding: 40px 20px 80px; /* 下部SVGが入るため、余白を広めに */
   overflow: hidden;
 }
 
@@ -214,50 +214,6 @@
   box-shadow: 0 12px 32px rgba(43, 64, 33, 0.22);
 }
 
-/* ===== 🌿 【超重要】手書き風なみ波ライン（SVG区切りスタリング） ===== */
-.wave-divider-bottom {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 4;
-}
-
-.wave-divider-bottom svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px); /* 少し幅を広げて波を緩やかに見せる */
-  height: 60px;
-}
-
-.wave-divider-bottom .shape-fill {
-  fill: var(--bg); /* 次のセクションの背景色（白・生成り）と合体させる */
-}
-
-/* セクション上部用の波 */
-.wave-divider-top {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 4;
-}
-
-.wave-divider-top svg {
-  position: relative;
-  display: block;
-  width: calc(150% + 1.3px);
-  height: 60px;
-}
-
-.wave-divider-top .shape-fill {
-  fill: var(--bg);
-}
-
 /* ===== 共通セクション設定 ===== */
 .section {
   padding: 80px 20px; /* なみ波が入るため上下の余白を少しゆったりに */
@@ -366,12 +322,7 @@
 .about {
   background-color: var(--green);
   /* 上下の波形SVGのために背景色領域を補正 */
-  padding: 120px 20px;
-}
-
-/* このセクションの下部波形は、次のイベントセクションの白（#fff）に合わせる */
-.about .wave-divider-bottom .shape-fill {
-  fill: #ffffff;
+  padding: 80px 20px;
 }
 
 .about-inner {
@@ -390,7 +341,7 @@
 /* ===== お問い合わせ ===== */
 .contact {
   background-color: var(--green);
-  padding: 120px 20px 100px;
+  padding: 80px 20px;
 }
 
 .contact-inner {
