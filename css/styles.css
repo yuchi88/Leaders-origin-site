@@ -1,0 +1,43 @@
+/* ===== 基本設定 ===== */
+:root {
+  --bg: #fff8f0;
+  --green: #378d33;
+  --lime: #bcdb67;
+  --blue: #4faae6; /* 少し明るくクリアな参考サイト風のブルーへ */
+  --text: #2b4021; /* 真っ黒から、優しく馴染む深緑がかった黒へ変更 */
+  --text-on-green: #fff8f0;
+  --font-maru:
+    "Zen Maru Gothic", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-maru); /* 全体を温かみのある丸ゴシックに */
+  line-height: 1.85;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
