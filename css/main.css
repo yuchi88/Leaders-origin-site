@@ -97,13 +97,25 @@
 /* ===== ファーストビュー（見切れロゴ＆ダイナミック版） ===== */
 .hero {
   position: relative;
-  background: linear-gradient(145deg, var(--lime) 0%, var(--green) 100%);
+  background-image: url("../img/site_back.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
   color: var(--text-on-green);
-  min-height: 82vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 40px 20px 80px; /* 下部SVGが入るため、余白を広めに */
+  padding: 40px 20px 80px;
   overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(55, 141, 51, 0.25);
+  z-index: 1;
 }
 
 .hero-inner-dynamic {
