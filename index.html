@@ -60,8 +60,8 @@
 
           <div class="hero-right-box">
             <h1 class="hero-title-big js-bounce-text">
-                <span class="line">おんが</span><br>
-                <span class="line">町民会議</span>
+              <span class="line">おんが</span><br />
+              <span class="line">町民会議</span>
             </h1>
             <p class="hero-sub-text">まちを、もっとおもしろく。</p>
             <a href="#events" class="hero-btn-styled"
@@ -169,13 +169,17 @@
         aria-labelledby="events-heading"
       >
         <h2 class="section-title" id="events-heading">イベント</h2>
+        <div class="event-filter">
+          <button class="filter-btn active" data-period="first">上半期</button>
+          <button class="filter-btn" data-period="second">下半期</button>
+        </div>
         <div class="event-grid">
-          <article class="event-card js-scroll-trigger">
+          <article class="event-card js-scroll-trigger" data-period="first">
             <div class="event-thumb">
               <img src="images/event-kodomo.png" alt="こどもまつりの様子" />
             </div>
             <div class="event-body">
-              <span class="event-month">5月</span>
+              <span class="event-month">4月</span>
               <h3 class="event-name">こどもまつり</h3>
               <p class="event-desc">
                 遊びや屋台がいっぱい！子どもたちが主役の春の一大イベントです。
@@ -184,12 +188,12 @@
             </div>
           </article>
 
-          <article class="event-card js-scroll-trigger">
+          <article class="event-card js-scroll-trigger" data-period="first">
             <div class="event-thumb">
               <img src="images/event-nightriver.png" alt="ナイトリバーの様子" />
             </div>
             <div class="event-body">
-              <span class="event-month">7月</span>
+              <span class="event-month">10月</span>
               <h3 class="event-name">ナイトリバー</h3>
               <p class="event-desc">
                 川辺を灯りで彩る、夏の夜のロマンチックなイベントです。
@@ -198,12 +202,12 @@
             </div>
           </article>
 
-          <article class="event-card js-scroll-trigger">
+          <article class="event-card js-scroll-trigger" data-period="first">
             <div class="event-thumb">
               <img src="images/event-oasis.png" alt="オアシス運動の様子" />
             </div>
             <div class="event-body">
-              <span class="event-month">9月</span>
+              <span class="event-month">10月</span>
               <h3 class="event-name">オアシス運動</h3>
               <p class="event-desc">
                 みんなでまちをきれいに。地域の環境美化に取り組みます。
@@ -212,12 +216,12 @@
             </div>
           </article>
 
-          <article class="event-card js-scroll-trigger">
+          <article class="event-card js-scroll-trigger" data-period="second">
             <div class="event-thumb">
               <img src="images/event-speech.png" alt="青年の主張大会の様子" />
             </div>
             <div class="event-body">
-              <span class="event-month">10月</span>
+              <span class="event-month">11月</span>
               <h3 class="event-name">青年の主張大会</h3>
               <p class="event-desc">
                 若者が想いを発信する場。未来への熱いメッセージが集まります。
@@ -226,12 +230,12 @@
             </div>
           </article>
 
-          <article class="event-card js-scroll-trigger">
+          <article class="event-card js-scroll-trigger" data-period="second">
             <div class="event-thumb">
               <img src="images/event-salmon.png" alt="鮭の放流会の様子" />
             </div>
             <div class="event-body">
-              <span class="event-month">12月</span>
+              <span class="event-month">2月</span>
               <h3 class="event-name">鮭の放流会</h3>
               <p class="event-desc">
                 稚魚を川へ。命と自然の大切さを学べる人気のイベントです。
@@ -240,12 +244,12 @@
             </div>
           </article>
 
-          <article class="event-card js-scroll-trigger">
+          <article class="event-card js-scroll-trigger" data-period="second">
             <div class="event-thumb">
               <img src="images/event-kite.png" alt="たこあげ大会の様子" />
             </div>
             <div class="event-body">
-              <span class="event-month">1月</span>
+              <span class="event-month">3月</span>
               <h3 class="event-name">たこあげ大会</h3>
               <p class="event-desc">
                 冬の青空にたこを揚げよう！家族で楽しめる新春イベントです。

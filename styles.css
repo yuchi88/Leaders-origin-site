@@ -488,6 +488,33 @@ button {
   opacity: 0.9;
 }
 
+.event-filter {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  border: none;
+  background: #e8e8e8;
+  color: var(--text);
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--green);
+  color: var(--text-on-green);
+}
+
 .event-btn {
   margin-top: 20px;
   padding: 10px 32px;

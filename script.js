@@ -113,3 +113,31 @@ window.addEventListener("scroll", () => {
 window.addEventListener("load", () => {
   handleScrollAnimation();
 });
+
+// イベントの切り替え
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".event-card");
+
+  function showEvents(period) {
+    cards.forEach((card) => {
+      if (card.dataset.period === period) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  // 初期表示は上半期
+  showEvents("first");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      showEvents(this.dataset.period);
+    });
+  });
+});
