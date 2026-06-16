@@ -121,9 +121,8 @@
 .hero-inner-dynamic {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   min-height: calc(100vh - 100px);
-
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -133,10 +132,11 @@
 
 .hero-left-box {
   align-self: flex-start;
-  width: 95%;
-  margin-top: -40px;
-  margin-left: -28%;
-  margin-bottom: -50px;
+  width: 45%;
+  max-width: 180px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 
 .hero-symbol-big {
@@ -153,8 +153,7 @@
   width: 100%;
   text-align: right;
 
-  margin-top: auto;
-  padding-bottom: 100px;
+  padding-bottom: 0;
 
   position: relative;
   z-index: 3;
@@ -166,7 +165,7 @@
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #1f6b1c;
 
   text-shadow:
     0 4px 15px rgba(0, 0, 0, 0.2),
@@ -193,7 +192,7 @@
   margin-top: 12px;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--bg);
+  color: #1f6b1c;
   text-shadow: 0 2px 8px rgba(43, 64, 33, 0.2);
   opacity: 0;
   animation: slideInRight 1s cubic-bezier(0.16, 1, 0.3, 1) 1.2s both;

@@ -75,3 +75,14 @@
     max-width: 1100px;
   }
 }
+
+@media (min-height: 850px) {
+  .hero-inner-dynamic {
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .hero-left-box {
+    margin-bottom: 60px;
+  }
+}
