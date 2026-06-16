@@ -55,17 +55,11 @@
     font-size: 3.8rem;
   }
 
-  .wave-divider-bottom svg,
-  .wave-divider-top svg {
-    height: 90px; /* PCでは波を少しダイナミックに高く */
-    width: 100%;
-  }
-
   .section {
     padding: 100px 24px;
   }
   .about {
-    padding: 16px 24px;
+    padding: 100px 24px;
   }
 
   .event-grid {
@@ -79,5 +73,16 @@
   .event-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: 1100px;
+  }
+}
+
+@media (min-height: 850px) {
+  .hero-inner-dynamic {
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .hero-left-box {
+    margin-bottom: 60px;
   }
 }
