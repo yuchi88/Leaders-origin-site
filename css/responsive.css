@@ -86,3 +86,13 @@
     margin-bottom: 60px;
   }
 }
+/* 縦長スマホ用 */
+@media (min-height: 800px) {
+  .hero-title-big {
+    font-size: 4.2rem;
+  }
+
+  .hero-sub-text {
+    font-size: 1.3rem;
+  }
+}

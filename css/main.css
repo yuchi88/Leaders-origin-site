@@ -134,7 +134,7 @@
   width: min(55vw, 220px);
   aspect-ratio: 1 / 1;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: clamp(10px, 3vh, 30px);
 }
 
 .hero-symbol-big {
