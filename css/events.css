@@ -6,7 +6,7 @@
 }
 
 .events {
-  background-color: #ffffff; /* お知らせ・aboutと背景色を切り替えてメリハリを */
+  background-color: var(--bg);
 }
 
 .event-grid {
